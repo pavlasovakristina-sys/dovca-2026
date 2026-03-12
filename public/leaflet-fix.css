@@ -1,0 +1,46 @@
+/*
+ * Leaflet vs Tailwind CSS 4 preflight fix.
+ * Loaded via <link> in index.html — OUTSIDE Vite's CSS pipeline
+ * so @tailwindcss/vite cannot process/layer/transform these rules.
+ *
+ * Tailwind CSS 4 preflight sets:
+ *   img { max-width: 100%; height: auto; display: block; }
+ *   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; border: 0 solid; }
+ * Both break Leaflet's tile rendering and control styling.
+ */
+
+/* Tile images — must be exactly 256x256, no constraints */
+.leaflet-tile-pane img,
+.leaflet-container img.leaflet-tile {
+  max-width: none !important;
+  max-height: none !important;
+  width: 256px !important;
+  height: 256px !important;
+}
+
+/* Marker / shadow / overlay images */
+.leaflet-marker-pane img,
+.leaflet-shadow-pane img {
+  max-width: none !important;
+  max-height: none !important;
+}
+
+.leaflet-overlay-pane svg {
+  max-width: none !important;
+  max-height: none !important;
+}
+
+/* Ensure tile container has correct background */
+.leaflet-container {
+  background: #ddd;
+}
+
+/* Restore Leaflet control borders killed by preflight border: 0 solid */
+.leaflet-bar a {
+  border-bottom: 1px solid #ccc;
+}
+
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  box-shadow: 0 3px 14px rgba(0,0,0,0.4);
+}

@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #1B6B93;
+  --color-secondary: #F49D1A;
+  --color-background: #F8FAFC;
+  --color-surface: #FFFFFF;
+  --color-text-primary: #0F172A;
+  --color-text-secondary: #64748B;
+  --color-text-inverse: #FFFFFF;
+
+  --color-type-travel: #94A3B8;
+  --color-type-sight: #3B82F6;
+  --color-type-food: #F97316;
+  --color-type-beach: #06B6D4;
+  --color-type-activity: #8B5CF6;
+  --color-type-free: #22C55E;
+
+  --color-priority-critical: #EF4444;
+  --color-priority-important: #F97316;
+  --color-priority-info: #94A3B8;
+
+  --color-difficulty-easy: #22C55E;
+  --color-difficulty-medium: #F59E0B;
+  --color-difficulty-hard: #EF4444;
+
+  --font-family-sans: "Inter", system-ui, sans-serif;
+  --font-family-mono: "JetBrains Mono", monospace;
+
+  --shadow-card: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.06);
+  --shadow-elevated: 0 4px 6px rgba(0,0,0,0.07), 0 2px 4px rgba(0,0,0,0.06);
+  --shadow-modal: 0 20px 25px rgba(0,0,0,0.1), 0 8px 10px rgba(0,0,0,0.04);
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: var(--font-family-sans);
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+  overscroll-behavior: none;
+}
+
+/* Focus visible ring */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

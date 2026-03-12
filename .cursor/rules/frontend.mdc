@@ -1,0 +1,13 @@
+---
+description: Frontend component rules
+globs: ["src/components/**"]
+---
+- Komponenty: funkcionalni, TypeScript, named exports
+- Jeden component = jedna slozka (index.tsx)
+- Props: explicitni interface, destructured v parametrech
+- State management: VYHRADNE pres useItinerary() hook
+- Zadny primy localStorage pristup mimo state/storage.ts
+- Mapy: react-leaflet 5 deklarativni API (MapContainer, Marker, Polyline, Popup)
+- DnD: @dnd-kit (SortableContext, useSortable) - NIKDY react-beautiful-dnd
+- Edge cases: vzdy res empty state, loading state, error state
+- A11y: WCAG 2.2 AA - focus visible, keyboard nav, ARIA labels

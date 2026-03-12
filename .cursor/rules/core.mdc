@@ -1,0 +1,12 @@
+---
+description: Core rules for Dovca 2026 Travel App
+globs: ["src/**"]
+---
+- Stack: React 19 + Vite 8 + TypeScript strict
+- State: useReducer + Context + localStorage (ADR-2)
+- ZADNY backend, ZADNE API klice, ZADNE placene sluzby
+- Bundle budget: <=150KB gzipped
+- Jazyk UI: cestina
+- Mobile-first: test na 375px sirce
+- Importuj data z src/data/itinerary.json
+- Pouzivej TypeScript interfaces z src/types/index.ts

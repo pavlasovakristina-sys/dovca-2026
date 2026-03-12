@@ -1,0 +1,471 @@
+{
+  "meta": {
+    "title": "Dovča 2026 — Gran Canaria",
+    "dateRange": {
+      "start": "2026-03-26",
+      "end": "2026-03-31"
+    },
+    "participants": 8,
+    "accommodation": {
+      "name": "Casa La Montaneta",
+      "location": "Vega de San Mateo",
+      "address": "Cruz del Herrero 26, 35328 Vega de San Mateo, Španělsko",
+      "dates": {
+        "checkIn": "2026-03-25",
+        "checkOut": "2026-04-01"
+      },
+      "checkInTime": "16:00–21:00",
+      "checkOutTime": "11:00–12:00",
+      "phone": "+34 660 501 485",
+      "coordinates": { "lat": 28.005, "lng": -15.529 }
+    },
+    "cars": [
+      {
+        "id": "car-1",
+        "reservation": "5560087",
+        "model": "Citroën C3 Aircross Family",
+        "driver": "Jaroslav Kumbera",
+        "dates": { "pickup": "2026-03-25T19:00", "return": "2026-04-01T06:00" }
+      },
+      {
+        "id": "car-2",
+        "reservation": "5560093",
+        "model": "Seat Arona TSI Reference",
+        "driver": "Petr Pavlas",
+        "dates": { "pickup": "2026-03-25T19:00", "return": "2026-04-01T09:00" }
+      }
+    ],
+    "flights": [
+      {
+        "id": "flight-inbound",
+        "booking": "GSEJ23",
+        "airline": "Corendon Airlines",
+        "flightNumber": "563",
+        "route": { "from": "NUE", "to": "LPA" },
+        "date": "2026-03-25",
+        "departure": "14:00",
+        "duration": "5h 05min",
+        "baggage": "Cabin max 10 kg (55×40×25 cm), 1× odbavené 32 kg (Kristina)"
+      },
+      {
+        "id": "flight-gc-tenerife",
+        "booking": "9II9BR",
+        "airline": "Air Europa",
+        "flightNumber": "UX2111",
+        "route": { "from": "LPA", "to": "TFN" },
+        "date": "2026-04-01",
+        "departure": "07:30",
+        "duration": "30min",
+        "baggage": "Cabin max 10 kg (55×35×25 cm) + osobní (40×30×15 cm), odbavené: OVĚŘIT TARIF"
+      },
+      {
+        "id": "flight-gc-home",
+        "booking": "EW4103",
+        "airline": "Eurowings",
+        "flightNumber": "EW4103",
+        "route": { "from": "LPA", "to": "NUE" },
+        "date": "2026-04-01",
+        "departure": "11:20",
+        "duration": "5h 40min",
+        "baggage": "Malé příruční 40×30×25 cm v ceně + 2× velké příruční 55×40×23 cm (8 kg)"
+      }
+    ]
+  },
+  "days": [
+    {
+      "id": "day-1",
+      "date": "2026-03-26",
+      "dayNumber": 1,
+      "theme": "Hory a výhledy",
+      "difficulty": "střední",
+      "activities": [
+        {
+          "id": "d1-a1",
+          "time": "08:30",
+          "title": "Odjezd z San Mateo",
+          "description": "Směr Cruz de Tejeda po GC-15",
+          "location": { "name": "Vega de San Mateo", "lat": 28.005, "lng": -15.529 },
+          "type": "travel",
+          "driveFromPrevious": null
+        },
+        {
+          "id": "d1-a2",
+          "time": "09:00",
+          "title": "Cruz de Tejeda",
+          "description": "Výhledy, malá procházka kolem, fotky, kavárny. Centrální bod ostrova.",
+          "location": { "name": "Cruz de Tejeda", "lat": 27.9867, "lng": -15.6198 },
+          "type": "sight",
+          "driveFromPrevious": { "minutes": 25 },
+          "tips": ["Kavárna Parador má terasu s výhledem", "Ranní hodiny = méně turistů"]
+        },
+        {
+          "id": "d1-a3",
+          "time": "10:00",
+          "title": "Pico de las Nieves",
+          "description": "Nejvyšší přístupný bod ostrova (1 949 m). Panorama, klidné místo.",
+          "location": { "name": "Pico de las Nieves", "lat": 27.9619, "lng": -15.5717 },
+          "type": "sight",
+          "driveFromPrevious": { "minutes": 20 }
+        },
+        {
+          "id": "d1-a4",
+          "time": "11:00",
+          "endTime": "12:30",
+          "title": "Roque Nublo",
+          "description": "Shuttle z Cruz de Los Llanos (10 min), pak pěší 1,5 km (30 min). Ikonická skála + výhledy.",
+          "location": { "name": "Roque Nublo", "lat": 27.9708, "lng": -15.6125 },
+          "type": "activity",
+          "driveFromPrevious": { "minutes": 25 },
+          "tips": [
+            "Parkovat v Cruz de Los Llanos — La Goleta je od 02/2025 TRVALE UZAVŘENO",
+            "Shuttle bus každých 30 min (9:30–18:00), jízda cca 10 min",
+            "Druhá půlka trasy je strmější a kamenitější",
+            "Pro děti od 6 let OK, pro 4leté náročnější — pomalejší tempo + dobrá obuv"
+          ],
+          "important": "POVINNÁ online rezervace na reservasroquenublo.com! Pro 8 osob = 2 registrace (max 5/registrace). Otevírají cca 15 dní předem."
+        },
+        {
+          "id": "d1-a5",
+          "time": "13:00",
+          "title": "Oběd v Tejeda",
+          "description": "Horská vesnice. Typické kanárské potaje de berros (křesová polévka), papas arrugadas con mojo.",
+          "location": { "name": "Tejeda", "lat": 27.9939, "lng": -15.6143 },
+          "type": "food",
+          "driveFromPrevious": { "minutes": 15 },
+          "tips": ["Ochutnat: potaje de berros, papas arrugadas con mojo"]
+        },
+        {
+          "id": "d1-a6",
+          "time": "15:00",
+          "title": "Návrat do San Mateo",
+          "description": "Odpoledne volno, bazén, odpočinek.",
+          "location": { "name": "Vega de San Mateo", "lat": 28.005, "lng": -15.529 },
+          "type": "free",
+          "driveFromPrevious": { "minutes": 30 }
+        }
+      ]
+    },
+    {
+      "id": "day-2",
+      "date": "2026-03-27",
+      "dayNumber": 2,
+      "theme": "Jih: duny + pláž",
+      "difficulty": "lehký",
+      "activities": [
+        {
+          "id": "d2-a1",
+          "time": "08:30",
+          "title": "Odjezd na jih",
+          "description": "GC-1, cca 1 hodina k dunám",
+          "location": { "name": "Vega de San Mateo", "lat": 28.005, "lng": -15.529 },
+          "type": "travel",
+          "driveFromPrevious": null
+        },
+        {
+          "id": "d2-a2",
+          "time": "09:30",
+          "title": "Maspalomas Dunes",
+          "description": "Ranní procházka po dunách. Méně horko, méně lidí. Chráněná přírodní rezervace.",
+          "location": { "name": "Dunas de Maspalomas", "lat": 27.741, "lng": -15.582 },
+          "type": "sight",
+          "driveFromPrevious": { "minutes": 60 },
+          "tips": ["Obuv do písku, pokrývka hlavy, voda", "Ranní hodiny (9–11h) jsou ideální"]
+        },
+        {
+          "id": "d2-a3",
+          "time": "11:00",
+          "title": "Pláž — Playa de Maspalomas",
+          "description": "Písek, mělčina, vhodné pro děti. Alternativa: Playa del Inglés.",
+          "location": { "name": "Playa de Maspalomas", "lat": 27.737, "lng": -15.589 },
+          "type": "beach",
+          "driveFromPrevious": { "minutes": 5 }
+        },
+        {
+          "id": "d2-a4",
+          "time": "12:30",
+          "title": "Oběd u pláže",
+          "description": "Restaurace u pláže Maspalomas",
+          "location": { "name": "Maspalomas", "lat": 27.737, "lng": -15.589 },
+          "type": "food",
+          "driveFromPrevious": null
+        },
+        {
+          "id": "d2-a5",
+          "time": "14:00",
+          "endTime": "16:00",
+          "title": "Koupání + volno",
+          "description": "Volný čas na pláži",
+          "location": { "name": "Playa de Maspalomas", "lat": 27.737, "lng": -15.589 },
+          "type": "beach",
+          "driveFromPrevious": null
+        },
+        {
+          "id": "d2-a6",
+          "time": "16:30",
+          "title": "Návrat do San Mateo",
+          "description": "",
+          "location": { "name": "Vega de San Mateo", "lat": 28.005, "lng": -15.529 },
+          "type": "travel",
+          "driveFromPrevious": { "minutes": 60 }
+        }
+      ]
+    },
+    {
+      "id": "day-3",
+      "date": "2026-03-28",
+      "dayNumber": 3,
+      "theme": "Lokální den: trh + Teror",
+      "difficulty": "lehký",
+      "activities": [
+        {
+          "id": "d3-a1",
+          "time": "08:30",
+          "title": "Mercado de Vega de San Mateo",
+          "description": "Sobotní trh přímo v San Mateo. Čerstvé sýry, ovoce, empanadas, gofio. Volný vstup, končí cca 14h.",
+          "location": { "name": "Mercado de Vega de San Mateo", "lat": 28.005, "lng": -15.529 },
+          "type": "activity",
+          "driveFromPrevious": null,
+          "tips": ["Ochutnat: queso de flor, gofio, mojo rojo/verde", "Trh končí ve 14h — přijít brzy"]
+        },
+        {
+          "id": "d3-a2",
+          "time": "10:30",
+          "title": "Jízda do Teroru",
+          "description": "GC-21, 30 minut",
+          "location": { "name": "Vega de San Mateo", "lat": 28.005, "lng": -15.529 },
+          "type": "travel",
+          "driveFromPrevious": null
+        },
+        {
+          "id": "d3-a3",
+          "time": "11:00",
+          "title": "Teror",
+          "description": "Bazilika Panny Marie z Borovice (patronka ostrova), historické centrum, dřevěné balkóny, lokální obchůdky.",
+          "location": { "name": "Basílica de Nuestra Señora del Pino, Teror", "lat": 28.0593, "lng": -15.5478 },
+          "type": "sight",
+          "driveFromPrevious": { "minutes": 30 }
+        },
+        {
+          "id": "d3-a4",
+          "time": "12:30",
+          "title": "Oběd v Teroru",
+          "description": "Typické chorizo de Teror, sýr",
+          "location": { "name": "Teror", "lat": 28.0593, "lng": -15.5478 },
+          "type": "food",
+          "driveFromPrevious": null,
+          "tips": ["Ochutnat: chorizo de Teror (čerstvé, natíratelné)"]
+        },
+        {
+          "id": "d3-a5",
+          "time": "14:30",
+          "title": "Bandama Caldera",
+          "description": "Vulkanický kráter s vyhlídkou z Pico de Bandama (569 m). Krátká procházka kolem okraje.",
+          "location": { "name": "Pico de Bandama", "lat": 28.0289, "lng": -15.4523 },
+          "type": "sight",
+          "driveFromPrevious": { "minutes": 45 }
+        },
+        {
+          "id": "d3-a6",
+          "time": "16:00",
+          "title": "Návrat do San Mateo",
+          "description": "",
+          "location": { "name": "Vega de San Mateo", "lat": 28.005, "lng": -15.529 },
+          "type": "travel",
+          "driveFromPrevious": { "minutes": 25 }
+        }
+      ]
+    },
+    {
+      "id": "day-4",
+      "date": "2026-03-29",
+      "dayNumber": 4,
+      "theme": "Rodinný den",
+      "difficulty": "lehký",
+      "activities": [
+        {
+          "id": "d4-a1",
+          "time": "09:00",
+          "title": "Odjezd do Palmitos Park",
+          "description": "Cca 50 min jízda na jih",
+          "location": { "name": "Vega de San Mateo", "lat": 28.005, "lng": -15.529 },
+          "type": "travel",
+          "driveFromPrevious": null
+        },
+        {
+          "id": "d4-a2",
+          "time": "10:00",
+          "endTime": "16:00",
+          "title": "Palmitos Park",
+          "description": "Zoo + botanická zahrada. Delfíní show, ptáci, motýli. Celodenní výlet.",
+          "location": { "name": "Palmitos Park", "lat": 27.8336, "lng": -15.6172 },
+          "type": "activity",
+          "driveFromPrevious": { "minutes": 50 },
+          "price": { "amount": 35, "currency": "EUR", "note": "Dospělý online (gate 37 €). Dítě 5–10: 26 €, mini 3–4: 14 €, 0–2 zdarma." },
+          "tips": [
+            "Koupit vstupenky ONLINE předem — úspora + garance (palmitospark.es/en/prices)",
+            "Alternativa při špatném počasí: Poema del Mar (akvárium, Las Palmas, cca 29–34 € dospělý)"
+          ],
+          "important": "Koupit vstupenky online předem!"
+        },
+        {
+          "id": "d4-a3",
+          "time": "16:30",
+          "title": "Návrat do San Mateo",
+          "description": "",
+          "location": { "name": "Vega de San Mateo", "lat": 28.005, "lng": -15.529 },
+          "type": "travel",
+          "driveFromPrevious": { "minutes": 50 }
+        }
+      ]
+    },
+    {
+      "id": "day-5",
+      "date": "2026-03-30",
+      "dayNumber": 5,
+      "theme": "Západní pláž + Puerto de Mogán",
+      "difficulty": "lehký",
+      "activities": [
+        {
+          "id": "d5-a1",
+          "time": "09:00",
+          "title": "Odjezd na jihozápad",
+          "description": "Cca 1 h 15 min k Playa de Amadores",
+          "location": { "name": "Vega de San Mateo", "lat": 28.005, "lng": -15.529 },
+          "type": "travel",
+          "driveFromPrevious": null
+        },
+        {
+          "id": "d5-a2",
+          "time": "10:15",
+          "title": "Playa de Amadores",
+          "description": "Chráněná zátoka, velmi klidné moře, bezpečné pro malé děti. Placené parkování (cca 3 €/h), sprchy, toalety, slunečníky.",
+          "location": { "name": "Playa de Amadores", "lat": 27.7911, "lng": -15.724 },
+          "type": "beach",
+          "driveFromPrevious": { "minutes": 75 },
+          "price": { "amount": 3, "currency": "EUR", "note": "Parkování cca 3 €/h" }
+        },
+        {
+          "id": "d5-a3",
+          "time": "12:30",
+          "title": "Přesun do Puerto de Mogán",
+          "description": "10 min jízdy po pobřeží",
+          "location": { "name": "Playa de Amadores", "lat": 27.7911, "lng": -15.724 },
+          "type": "travel",
+          "driveFromPrevious": null
+        },
+        {
+          "id": "d5-a4",
+          "time": "13:00",
+          "title": "Puerto de Mogán",
+          "description": "\"Malé Benátky\" — rybářská vesnice s kanály, barevné domky. Oběd: čerstvé ryby a sancocho.",
+          "location": { "name": "Puerto de Mogán", "lat": 27.8173, "lng": -15.7595 },
+          "type": "food",
+          "driveFromPrevious": { "minutes": 10 },
+          "tips": ["Objednat sancocho (typická rybí polévka)", "Papas arrugadas con mojo"]
+        },
+        {
+          "id": "d5-a5",
+          "time": "15:30",
+          "title": "Návrat do San Mateo",
+          "description": "",
+          "location": { "name": "Vega de San Mateo", "lat": 28.005, "lng": -15.529 },
+          "type": "travel",
+          "driveFromPrevious": { "minutes": 75 }
+        }
+      ]
+    },
+    {
+      "id": "day-6",
+      "date": "2026-03-31",
+      "dayNumber": 6,
+      "theme": "Las Palmas + Vegueta + rozloučení",
+      "difficulty": "lehký",
+      "activities": [
+        {
+          "id": "d6-a1",
+          "time": "09:00",
+          "title": "Odjezd do Las Palmas",
+          "description": "45 min jízdy",
+          "location": { "name": "Vega de San Mateo", "lat": 28.005, "lng": -15.529 },
+          "type": "travel",
+          "driveFromPrevious": null
+        },
+        {
+          "id": "d6-a2",
+          "time": "09:45",
+          "title": "Vegueta",
+          "description": "Nejstarší čtvrť Las Palmas. Katedrála Santa Ana, Casa de Colón (Kolumbovo muzeum — vstup cca 4 €), dlážděné uličky.",
+          "location": { "name": "Catedral de Santa Ana, Vegueta", "lat": 28.100, "lng": -15.415 },
+          "type": "sight",
+          "driveFromPrevious": { "minutes": 45 },
+          "price": { "amount": 4, "currency": "EUR", "note": "Casa de Colón vstupné" },
+          "tips": ["Casa de Colón: malé ale zajímavé muzeum (1–2 h)", "Děti 4–8 vydrží"]
+        },
+        {
+          "id": "d6-a3",
+          "time": "11:30",
+          "title": "Triana",
+          "description": "Sousední čtvrť, nákupní třída, kavárny.",
+          "location": { "name": "Triana, Las Palmas", "lat": 28.104, "lng": -15.417 },
+          "type": "sight",
+          "driveFromPrevious": null,
+          "tips": ["Ochutnat Barraquito — typické vrstvené káfe s Licor 43"]
+        },
+        {
+          "id": "d6-a4",
+          "time": "12:30",
+          "title": "Oběd — tapas",
+          "description": "Tapas v centru Las Palmas",
+          "location": { "name": "Triana, Las Palmas", "lat": 28.104, "lng": -15.417 },
+          "type": "food",
+          "driveFromPrevious": null
+        },
+        {
+          "id": "d6-a5",
+          "time": "14:00",
+          "title": "Playa de Las Canteras",
+          "description": "Městská pláž. Písek, mělčina, dobrá pro poslední koupání.",
+          "location": { "name": "Playa de Las Canteras", "lat": 28.14, "lng": -15.4361 },
+          "type": "beach",
+          "driveFromPrevious": { "minutes": 10 }
+        },
+        {
+          "id": "d6-a6",
+          "time": "16:30",
+          "title": "Návrat do San Mateo + balení",
+          "description": "Klidný večer, balení, kontrola check-in na let (Corendon online check-in 72 h před).",
+          "location": { "name": "Vega de San Mateo", "lat": 28.005, "lng": -15.529 },
+          "type": "free",
+          "driveFromPrevious": { "minutes": 45 },
+          "important": "Zkontrolovat Corendon online check-in (dostupný od 29.03. ~07:30)"
+        }
+      ]
+    }
+  ],
+  "checklist": [
+    {
+      "id": "check-1",
+      "text": "Roque Nublo — online rezervace na reservasroquenublo.com. Pro 8 osob = 2 registrace (max 5/registrace). Rezervace se otevírají cca 15 dní předem → hlídat 26.03.",
+      "priority": "critical",
+      "done": false
+    },
+    {
+      "id": "check-5",
+      "text": "Palmitos Park — koupit vstupenky online předem (35/26/14 € vs gate 37/28 €). palmitospark.es/en/prices",
+      "priority": "important",
+      "done": false
+    },
+    {
+      "id": "check-6",
+      "text": "Poema del Mar — doporučený online předkup (skip-the-line), ale není povinný.",
+      "priority": "important",
+      "done": false
+    },
+    {
+      "id": "check-9",
+      "text": "Roque Nublo trasa: druhá polovina strmější, pro 4leté náročnější — počítat s pomalejším tempem.",
+      "priority": "info",
+      "done": false
+    }
+  ]
+}
