@@ -54,70 +54,84 @@ export function ActivityCard({
       }}
     >
       {/* Collapsed row */}
-      <button
-        className="w-full flex items-center gap-3 px-3 py-3 text-left min-h-[44px]"
-        onClick={() => hasDetails && setExpanded((v) => !v)}
-        aria-label={`${activity.time} – ${activity.title}${expanded ? ", sbalit" : ", rozbalit"}`}
-      >
-        {/* Drag handle */}
-        {dragHandle && (
-          <span className="flex-shrink-0 text-slate-300 cursor-grab active:cursor-grabbing w-5 flex items-center justify-center">
-            {dragHandle}
-          </span>
-        )}
-
-        {/* Type icon */}
-        <span
-          className="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-base"
-          style={{ backgroundColor: `${TYPE_COLORS[activity.type]}20` }}
-          aria-hidden="true"
+      <div className="flex items-center gap-0">
+        <button
+          className="flex-1 flex items-center gap-3 px-3 py-3 text-left min-h-[44px]"
+          onClick={() => hasDetails && setExpanded((v) => !v)}
+          aria-label={`${activity.time} – ${activity.title}${expanded ? ", sbalit" : ", rozbalit"}`}
         >
-          {TYPE_ICONS[activity.type]}
-        </span>
+          {/* Drag handle */}
+          {dragHandle && (
+            <span className="flex-shrink-0 text-slate-300 cursor-grab active:cursor-grabbing w-5 flex items-center justify-center">
+              {dragHandle}
+            </span>
+          )}
 
-        {/* Time */}
-        <span
-          className="flex-shrink-0 text-sm font-mono font-medium w-11"
-          style={{ color: "var(--color-text-secondary)" }}
-        >
-          {activity.time}
-        </span>
-
-        {/* Title */}
-        <span
-          className="flex-1 text-base font-medium leading-tight"
-          style={{ color: "var(--color-text-primary)" }}
-        >
-          {activity.title}
-        </span>
-
-        {/* Drive badge */}
-        {activity.driveFromPrevious && (
+          {/* Type icon */}
           <span
-            className="flex-shrink-0 text-xs px-2 py-0.5 rounded-full"
-            style={{
-              backgroundColor: "#F1F5F9",
-              color: "var(--color-text-secondary)",
-            }}
-          >
-            🚗 {activity.driveFromPrevious.minutes} min
-          </span>
-        )}
-
-        {/* Expand chevron */}
-        {hasDetails && (
-          <span
-            className="flex-shrink-0 text-xs transition-transform"
-            style={{
-              color: "var(--color-text-secondary)",
-              transform: expanded ? "rotate(180deg)" : "rotate(0deg)",
-            }}
+            className="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-base"
+            style={{ backgroundColor: `${TYPE_COLORS[activity.type]}20` }}
             aria-hidden="true"
           >
-            ▾
+            {TYPE_ICONS[activity.type]}
           </span>
-        )}
-      </button>
+
+          {/* Time */}
+          <span
+            className="flex-shrink-0 text-sm font-mono font-medium w-11"
+            style={{ color: "var(--color-text-secondary)" }}
+          >
+            {activity.time}
+          </span>
+
+          {/* Title */}
+          <span
+            className="flex-1 text-base font-medium leading-tight"
+            style={{ color: "var(--color-text-primary)" }}
+          >
+            {activity.title}
+          </span>
+
+          {/* Drive badge */}
+          {activity.driveFromPrevious && (
+            <span
+              className="flex-shrink-0 text-xs px-2 py-0.5 rounded-full"
+              style={{
+                backgroundColor: "#F1F5F9",
+                color: "var(--color-text-secondary)",
+              }}
+            >
+              🚗 {activity.driveFromPrevious.minutes} min
+            </span>
+          )}
+
+          {/* Expand chevron */}
+          {hasDetails && (
+            <span
+              className="flex-shrink-0 text-xs transition-transform"
+              style={{
+                color: "var(--color-text-secondary)",
+                transform: expanded ? "rotate(180deg)" : "rotate(0deg)",
+              }}
+              aria-hidden="true"
+            >
+              ▾
+            </span>
+          )}
+        </button>
+
+        <button
+          onClick={(e) => {
+            e.stopPropagation();
+            onMoreClick(activity.id);
+          }}
+          className="flex-shrink-0 flex items-center justify-center w-11 h-11 rounded-full text-sm font-medium"
+          style={{ color: "var(--color-text-secondary)" }}
+          aria-label="Více možností"
+        >
+          ⋯
+        </button>
+      </div>
 
       {/* Expanded content */}
       {expanded && (
@@ -181,24 +195,6 @@ export function ActivityCard({
             </div>
           )}
 
-          {/* Action button */}
-          <div className="mt-3 flex justify-end">
-            <button
-              onClick={(e) => {
-                e.stopPropagation();
-                onMoreClick(activity.id);
-              }}
-              className="flex items-center gap-1 px-3 py-1.5 rounded-full text-sm font-medium min-h-[44px] min-w-[44px]"
-              style={{
-                backgroundColor: "#F8FAFC",
-                color: "var(--color-text-secondary)",
-                border: "1px solid #E2E8F0",
-              }}
-              aria-label="Více možností"
-            >
-              ⋯
-            </button>
-          </div>
         </div>
       )}
     </article>
