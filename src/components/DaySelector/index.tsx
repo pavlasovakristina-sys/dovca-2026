@@ -9,6 +9,7 @@ interface DaySelectorProps {
 const WEEKDAYS = ["Ne", "Po", "Út", "St", "Čt", "Pá", "So"];
 
 function getDayLabel(day: Day): string {
+  if (day.dayNumber === 0) return "B";
   const weekday = WEEKDAYS[new Date(day.date).getDay()];
   return `${day.dayNumber}·${weekday}`;
 }

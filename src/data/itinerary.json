@@ -447,6 +447,40 @@
         }
       ]
     }
+    ,{
+      "id": "day-b-plan",
+      "date": "",
+      "dayNumber": 0,
+      "theme": "Deštivý den",
+      "difficulty": "lehký",
+      "activities": [
+        {
+          "id": "bp-a1",
+          "time": "10:00",
+          "endTime": "16:00",
+          "title": "Palmitos Park",
+          "description": "Zoo + botanická zahrada. Delfíní show, ptáci, motýli. Celodenní výlet. Vhodné při hezkém počasí nebo zataženu.",
+          "location": { "name": "Palmitos Park", "lat": 27.8336, "lng": -15.6172 },
+          "type": "activity",
+          "driveFromPrevious": { "minutes": 65 },
+          "price": { "amount": 35, "currency": "EUR", "note": "Dospělý online (gate 37 €). Dítě 5–10: 26 €, mini 3–4: 14 €, 0–2 zdarma." },
+          "tips": ["Koupit vstupenky ONLINE předem — úspora + garance", "palmitospark.es/en/prices"],
+          "important": "Koupit vstupenky online předem!"
+        },
+        {
+          "id": "bp-a2",
+          "time": "10:00",
+          "endTime": "16:00",
+          "title": "Poema del Mar (alternativa při dešti)",
+          "description": "Obří akvárium v Las Palmas u přístavu. 3 zóny: džungle, mělké moře, hlubiny. Interaktivní expozice pro děti. Vhodné při dešti — vše vevnitř.",
+          "location": { "name": "Poema del Mar, Las Palmas", "lat": 28.1357, "lng": -15.4308 },
+          "type": "activity",
+          "driveFromPrevious": { "minutes": 45 },
+          "price": { "amount": 32, "currency": "EUR", "note": "Cca 29–34 € dospělý, děti levněji." },
+          "tips": ["Doporučený online předkup (skip-the-line)", "Otevřeno 9:30–17:30"]
+        }
+      ]
+    }
   ],
   "checklist": [
     {

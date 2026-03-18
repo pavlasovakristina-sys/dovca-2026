@@ -49,11 +49,18 @@ export function DayDetail({ day, onMoreClick, onReorder }: DayDetailProps) {
               className="text-lg font-semibold leading-tight"
               style={{ color: "var(--color-text-primary)" }}
             >
-              Den {day.dayNumber} — {day.theme}
+              {day.dayNumber === 0 ? `B-plán — ${day.theme}` : `Den ${day.dayNumber} — ${day.theme}`}
             </h2>
-            <p className="text-sm mt-0.5" style={{ color: "var(--color-text-secondary)" }}>
-              {formatDate(day.date)}
-            </p>
+            {day.dayNumber !== 0 && (
+              <p className="text-sm mt-0.5" style={{ color: "var(--color-text-secondary)" }}>
+                {formatDate(day.date)}
+              </p>
+            )}
+            {day.dayNumber === 0 && (
+              <p className="text-sm mt-0.5" style={{ color: "var(--color-text-secondary)" }}>
+                Náhradní program pro deštivý den
+              </p>
+            )}
           </div>
           <div className="flex flex-col items-end gap-1">
             <span
