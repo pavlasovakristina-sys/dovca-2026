@@ -13,6 +13,7 @@ export interface Meta {
   participants: number;
   accommodation: Accommodation;
   cars: Car[];
+  carPickup?: CarPickup;
   flights: Flight[];
 }
 
@@ -25,6 +26,12 @@ export interface Accommodation {
   checkOutTime: string;
   phone: string;
   coordinates: { lat: number; lng: number };
+}
+
+export interface CarPickup {
+  internationalArrival: string[];
+  domesticArrival: string[];
+  phone: string[];
 }
 
 export interface Car {

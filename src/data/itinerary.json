@@ -16,8 +16,20 @@
       },
       "checkInTime": "16:00–21:00",
       "checkOutTime": "11:00–12:00",
-      "phone": "+34 660 501 485",
+      "phone": "+34 722 14 16 92",
       "coordinates": { "lat": 28.0222, "lng": -15.5604 }
+    },
+    "carPickup": {
+      "internationalArrival": [
+        "Look for Door 10, located between the SPAR supermarket and the ING/Euronet ATM.",
+        "When exiting through Door 10, if you do not see our Shuttle-Bus, wait near Pickup Point A1."
+      ],
+      "domesticArrival": [
+        "Exit the baggage claim area and walk to the left towards the International Arrivals area.",
+        "Look for Door 10, located between the SPAR supermarket and the ING/Euronet ATM.",
+        "When exiting through Door 10, if you do not see our Shuttle-Bus, wait near Pickup Point A1."
+      ],
+      "phone": ["+34 678 314 405", "+34 922 260 200"]
     },
     "cars": [
       {

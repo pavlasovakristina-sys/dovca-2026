@@ -1,5 +1,5 @@
 import { useItinerary } from "../../hooks/useItinerary";
-import type { Flight, Car, Accommodation } from "../../types";
+import type { Flight, Car, Accommodation, CarPickup } from "../../types";
 
 function SectionHeader({ children }: { children: React.ReactNode }) {
   return (
@@ -139,9 +139,55 @@ function CarCard({ car }: { car: Car }) {
   );
 }
 
+function CarPickupCard({ pickup }: { pickup: CarPickup }) {
+  return (
+    <Card>
+      <p className="font-semibold text-base mb-3" style={{ color: "var(--color-text-primary)" }}>
+        📍 Vyzvednutí auta na letišti
+      </p>
+
+      <div className="mb-3">
+        <p className="text-sm font-medium" style={{ color: "var(--color-text-primary)" }}>
+          ✈️ Let ze zahraničí (mimo Španělsko):
+        </p>
+        <ul className="mt-1 list-disc pl-5 text-sm" style={{ color: "var(--color-text-secondary)" }}>
+          {pickup.internationalArrival.map((step, i) => (
+            <li key={i}>{step}</li>
+          ))}
+        </ul>
+      </div>
+
+      <div className="mb-3">
+        <p className="text-sm font-medium" style={{ color: "var(--color-text-primary)" }}>
+          ✈️ Let ze Španělska:
+        </p>
+        <ul className="mt-1 list-disc pl-5 text-sm" style={{ color: "var(--color-text-secondary)" }}>
+          {pickup.domesticArrival.map((step, i) => (
+            <li key={i}>{step}</li>
+          ))}
+        </ul>
+      </div>
+
+      <div
+        className="flex flex-col gap-1 p-2 rounded text-sm"
+        style={{ backgroundColor: "#EFF6FF", color: "#1E40AF" }}
+      >
+        <p className="font-medium">📞 Nenajdete shuttle? Volejte:</p>
+        <div className="flex gap-3 flex-wrap">
+          {pickup.phone.map((p) => (
+            <a key={p} href={`tel:${p}`} className="font-medium underline">
+              {p}
+            </a>
+          ))}
+        </div>
+      </div>
+    </Card>
+  );
+}
+
 export function ItineraryView() {
   const { state } = useItinerary();
-  const { accommodation, flights, cars } = state.meta;
+  const { accommodation, flights, cars, carPickup } = state.meta;
 
   return (
     <main className="pb-20 lg:pb-8">
@@ -157,6 +203,7 @@ export function ItineraryView() {
       {cars.map((c) => (
         <CarCard key={c.id} car={c} />
       ))}
+      {carPickup && <CarPickupCard pickup={carPickup} />}
     </main>
   );
 }
