@@ -7,17 +7,17 @@
     },
     "participants": 8,
     "accommodation": {
-      "name": "Casa La Montaneta",
-      "location": "Cruz del Herrero, Vega de San Mateo",
-      "address": "Cruz del Herrero 26, 35328 Vega de San Mateo, Španělsko",
+      "name": "El Faro Sardina Villa",
+      "location": "Sardina, Gáldar",
+      "address": "Carr. del Faro 21A, 35469 Sardina, Španělsko",
       "dates": {
         "checkIn": "2026-03-25",
         "checkOut": "2026-04-01"
       },
-      "checkInTime": "16:00–21:00",
-      "checkOutTime": "11:00–12:00",
-      "phone": "+34 722 14 16 92",
-      "coordinates": { "lat": 28.0222, "lng": -15.5604 }
+      "checkInTime": "16:00–20:00",
+      "checkOutTime": "10:00",
+      "phone": "",
+      "coordinates": { "lat": 28.159, "lng": -15.704 }
     },
     "carPickup": {
       "internationalArrival": [
@@ -96,7 +96,7 @@
           "time": "08:30",
           "title": "Odjezd z ubytování",
           "description": "Směr Pico de las Nieves po GC-15",
-          "location": { "name": "Casa La Montaneta, Cruz del Herrero", "lat": 28.0222, "lng": -15.5604 },
+          "location": { "name": "El Faro Sardina Villa, Sardina", "lat": 28.159, "lng": -15.704 },
           "type": "travel",
           "driveFromPrevious": null
         },
@@ -107,7 +107,7 @@
           "description": "Nejvyšší přístupný bod ostrova (1 949 m). Panorama, klidné místo.",
           "location": { "name": "Pico de las Nieves", "lat": 27.9619, "lng": -15.5717 },
           "type": "sight",
-          "driveFromPrevious": { "minutes": 25 }
+          "driveFromPrevious": { "minutes": 55 }
         },
         {
           "id": "d1-a3",
@@ -141,9 +141,9 @@
           "time": "14:30",
           "title": "Návrat do ubytování",
           "description": "Odpoledne volno, bazén, odpočinek.",
-          "location": { "name": "Casa La Montaneta, Cruz del Herrero", "lat": 28.0222, "lng": -15.5604 },
+          "location": { "name": "El Faro Sardina Villa, Sardina", "lat": 28.159, "lng": -15.704 },
           "type": "free",
-          "driveFromPrevious": { "minutes": 30 }
+          "driveFromPrevious": { "minutes": 45 }
         }
       ]
     },
@@ -158,8 +158,8 @@
           "id": "d2-a1",
           "time": "08:30",
           "title": "Odjezd na jih",
-          "description": "GC-1, cca 1 hodina k dunám",
-          "location": { "name": "Casa La Montaneta, Cruz del Herrero", "lat": 28.0222, "lng": -15.5604 },
+          "description": "GC-2 → GC-1, cca 1:15 k dunám",
+          "location": { "name": "El Faro Sardina Villa, Sardina", "lat": 28.159, "lng": -15.704 },
           "type": "travel",
           "driveFromPrevious": null
         },
@@ -170,7 +170,7 @@
           "description": "Ranní procházka po dunách. Méně horko, méně lidí. Chráněná přírodní rezervace.",
           "location": { "name": "Dunas de Maspalomas", "lat": 27.741, "lng": -15.582 },
           "type": "sight",
-          "driveFromPrevious": { "minutes": 60 },
+          "driveFromPrevious": { "minutes": 75 },
           "tips": ["Obuv do písku, pokrývka hlavy, voda", "Ranní hodiny (9–11h) jsou ideální"]
         },
         {
@@ -206,9 +206,9 @@
           "time": "15:30",
           "title": "Návrat do ubytování",
           "description": "",
-          "location": { "name": "Casa La Montaneta, Cruz del Herrero", "lat": 28.0222, "lng": -15.5604 },
+          "location": { "name": "El Faro Sardina Villa, Sardina", "lat": 28.159, "lng": -15.704 },
           "type": "travel",
-          "driveFromPrevious": { "minutes": 75 }
+          "driveFromPrevious": { "minutes": 70 }
         }
       ]
     },
@@ -262,9 +262,9 @@
           "time": "16:30",
           "title": "Návrat do ubytování",
           "description": "",
-          "location": { "name": "Casa La Montaneta, Cruz del Herrero", "lat": 28.0222, "lng": -15.5604 },
+          "location": { "name": "El Faro Sardina Villa, Sardina", "lat": 28.159, "lng": -15.704 },
           "type": "travel",
-          "driveFromPrevious": { "minutes": 25 }
+          "driveFromPrevious": { "minutes": 45 }
         }
       ]
     },
@@ -279,8 +279,8 @@
           "id": "d4-a1",
           "time": "09:00",
           "title": "Odjezd směr San Bartolomé",
-          "description": "Cca 30 min jízdy",
-          "location": { "name": "Casa La Montaneta, Cruz del Herrero", "lat": 28.0222, "lng": -15.5604 },
+          "description": "Cca 55 min jízdy",
+          "location": { "name": "El Faro Sardina Villa, Sardina", "lat": 28.159, "lng": -15.704 },
           "type": "travel",
           "driveFromPrevious": null
         },
@@ -291,7 +291,7 @@
           "description": "Historické městečko v horách, kostel, klidné náměstí.",
           "location": { "name": "San Bartolomé de Tirajana", "lat": 27.9244, "lng": -15.5728 },
           "type": "sight",
-          "driveFromPrevious": { "minutes": 30 }
+          "driveFromPrevious": { "minutes": 55 }
         },
         {
           "id": "d4-a3",
@@ -319,9 +319,9 @@
           "time": "16:00",
           "title": "Návrat do ubytování",
           "description": "",
-          "location": { "name": "Casa La Montaneta, Cruz del Herrero", "lat": 28.0222, "lng": -15.5604 },
+          "location": { "name": "El Faro Sardina Villa, Sardina", "lat": 28.159, "lng": -15.704 },
           "type": "travel",
-          "driveFromPrevious": { "minutes": 40 }
+          "driveFromPrevious": { "minutes": 55 }
         }
       ]
     },
@@ -336,8 +336,8 @@
           "id": "d5-a1",
           "time": "08:30",
           "title": "Odjezd směr Bentayga",
-          "description": "Cca 40 min jízdy",
-          "location": { "name": "Casa La Montaneta, Cruz del Herrero", "lat": 28.0222, "lng": -15.5604 },
+          "description": "Cca 50 min jízdy",
+          "location": { "name": "El Faro Sardina Villa, Sardina", "lat": 28.159, "lng": -15.704 },
           "type": "travel",
           "driveFromPrevious": null
         },
@@ -348,7 +348,7 @@
           "description": "Posvátné místo původních obyvatel (Guančů). Archeologické centrum + vyhlídka.",
           "location": { "name": "Roque Bentayga", "lat": 27.9725, "lng": -15.6395 },
           "type": "sight",
-          "driveFromPrevious": { "minutes": 40 },
+          "driveFromPrevious": { "minutes": 50 },
           "price": { "amount": 3, "currency": "EUR", "note": "Archeologické centrum" }
         },
         {
@@ -386,9 +386,9 @@
           "time": "16:30",
           "title": "Návrat do ubytování",
           "description": "",
-          "location": { "name": "Casa La Montaneta, Cruz del Herrero", "lat": 28.0222, "lng": -15.5604 },
+          "location": { "name": "El Faro Sardina Villa, Sardina", "lat": 28.159, "lng": -15.704 },
           "type": "travel",
-          "driveFromPrevious": { "minutes": 45 }
+          "driveFromPrevious": { "minutes": 15 }
         }
       ]
     },
@@ -403,8 +403,8 @@
           "id": "d6-a1",
           "time": "09:00",
           "title": "Odjezd do Las Palmas",
-          "description": "45 min jízdy",
-          "location": { "name": "Casa La Montaneta, Cruz del Herrero", "lat": 28.0222, "lng": -15.5604 },
+          "description": "35 min jízdy",
+          "location": { "name": "El Faro Sardina Villa, Sardina", "lat": 28.159, "lng": -15.704 },
           "type": "travel",
           "driveFromPrevious": null
         },
@@ -415,7 +415,7 @@
           "description": "Nejstarší čtvrť Las Palmas. Katedrála Santa Ana, Casa de Colón (Kolumbovo muzeum — vstup cca 4 €), dlážděné uličky.",
           "location": { "name": "Catedral de Santa Ana, Vegueta", "lat": 28.1, "lng": -15.415 },
           "type": "sight",
-          "driveFromPrevious": { "minutes": 45 },
+          "driveFromPrevious": { "minutes": 35 },
           "price": { "amount": 4, "currency": "EUR", "note": "Casa de Colón vstupné" },
           "tips": ["Casa de Colón: malé ale zajímavé muzeum (1–2 h)", "Děti 4–8 vydrží"]
         },
@@ -452,9 +452,9 @@
           "time": "16:00",
           "title": "Návrat do ubytování + balení",
           "description": "Klidný večer, balení, kontrola check-in na let.",
-          "location": { "name": "Casa La Montaneta, Cruz del Herrero", "lat": 28.0222, "lng": -15.5604 },
+          "location": { "name": "El Faro Sardina Villa, Sardina", "lat": 28.159, "lng": -15.704 },
           "type": "free",
-          "driveFromPrevious": { "minutes": 45 },
+          "driveFromPrevious": { "minutes": 35 },
           "important": "Zkontrolovat Corendon online check-in (dostupný od 29.03. ~07:30)"
         }
       ]
@@ -474,7 +474,7 @@
           "description": "Zoo + botanická zahrada. Delfíní show, ptáci, motýli. Celodenní výlet. Vhodné při hezkém počasí nebo zataženu.",
           "location": { "name": "Palmitos Park", "lat": 27.8336, "lng": -15.6172 },
           "type": "activity",
-          "driveFromPrevious": { "minutes": 65 },
+          "driveFromPrevious": { "minutes": 75 },
           "price": { "amount": 35, "currency": "EUR", "note": "Dospělý online (gate 37 €). Dítě 5–10: 26 €, mini 3–4: 14 €, 0–2 zdarma." },
           "tips": ["Koupit vstupenky ONLINE předem — úspora + garance", "palmitospark.es/en/prices"],
           "important": "Koupit vstupenky online předem!"
@@ -487,7 +487,7 @@
           "description": "Obří akvárium v Las Palmas u přístavu. 3 zóny: džungle, mělké moře, hlubiny. Interaktivní expozice pro děti. Vhodné při dešti — vše vevnitř.",
           "location": { "name": "Poema del Mar, Las Palmas", "lat": 28.1357, "lng": -15.4308 },
           "type": "activity",
-          "driveFromPrevious": { "minutes": 45 },
+          "driveFromPrevious": { "minutes": 35 },
           "price": { "amount": 32, "currency": "EUR", "note": "Cca 29–34 € dospělý, děti levněji." },
           "tips": ["Doporučený online předkup (skip-the-line)", "Otevřeno 9:30–17:30"]
         }
